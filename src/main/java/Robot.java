@@ -1,19 +1,31 @@
 
 public class Robot implements Action{
+	
+	private int maxDistance;
+	private int maxHeightJump;
+	private String name;
 
-	public void jump() {
-		System.out.println("Робот прыгает!");
-		
+	public Robot(String name, int maxDistance, int maxHeightJump) {
+		super();
+		this.maxDistance = maxDistance;
+		this.maxHeightJump = maxHeightJump;
+		this.name = name;
 	}
 
-	public void run() {
-		System.out.println("Робот бегает!");
-		
+	@Override
+	public String getName() {
+		return name;
 	}
-
-//	public void something() {
-//		// TODO Auto-generated method stub
-//		
-//	}
-
+	
+	@Override
+	public int getMaxDistance() {
+		
+		return maxDistance;
+	}
+	
+	@Override
+	public int getMaxHeightJump() {
+		
+		return maxHeightJump;
+	}
 }

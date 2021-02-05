@@ -1,14 +1,33 @@
 
 public class Man implements Action{
-
-	public void jump() {
-		System.out.println("Человек прыгает!");
-		
+	
+	private int maxDistance;
+	private int maxHeightJump;
+	private String name;
+	
+	public Man(String name, int maxDistance, int maxHeightJump) {
+		super();
+		this.maxDistance = maxDistance;
+		this.maxHeightJump = maxHeightJump;
+		this.name = name;
 	}
 
-	public void run() {
-		System.out.println("Человек бежит!");
+	@Override
+	public int getMaxDistance() {
 		
+		return maxDistance;
+	}
+	
+	@Override
+	public int getMaxHeightJump() {
+		
+		return maxHeightJump;
+	}
+	
+	@Override
+	public String getName() {
+		
+		return name;
 	}
 
 }

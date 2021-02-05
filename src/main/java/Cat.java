@@ -1,20 +1,36 @@
 
 public class Cat implements Action {
-
-	public void jump() {
-		System.out.println("Кот прыгает!");
-		
+	
+	private int maxDistance;
+	private int maxHeightJump;
+	private String name;
+	
+	public Cat(String name, int maxDistance, int maxHeightJump) {
+		super();
+		this.maxDistance = maxDistance;
+		this.maxHeightJump = maxHeightJump;
+		this.name = name;
 	}
 
-	public void run() {
-		System.out.println("Кот бегает!");
+	@Override
+	public String getName() {
+		return name;
+	}
+	
+	@Override
+	public int getMaxDistance() {
 		
+		return maxDistance;
+	}
+	
+	@Override
+	public int getMaxHeightJump() {
+		
+		return maxHeightJump;
 	}
 
-//	public void something() {
-		// TODO Auto-generated method stub
-		
-//	}
+	
+
 
 	
 }

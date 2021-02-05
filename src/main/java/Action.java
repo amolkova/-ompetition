@@ -1,10 +1,19 @@
+import javax.xml.bind.annotation.XmlIDREF;
 
 public interface Action {
-	public void jump();
-	public void run();
-	
-//	public void something(){
 		
-//	}
+	int getMaxDistance();
+	int getMaxHeightJump();
+	String getName();
+	
+	public default void jump() {
+		System.out.println(getName() + " ןנûדאוע");
+		
+	}
+
+	public default void run() {
+		System.out.println(getName() + " בודאוע");
+		
+	}
 	
 }
