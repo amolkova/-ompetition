@@ -25,7 +25,14 @@ public class Start {
 			
 						
 		}
-		}
+		
+		
+		System.out.println("Task 5 Day of Week");
+		
+		System.out.println(Utiliti.getWorkingHours(DayOfWeek.Saturday));
+		
+		
+	}
 
 	
 	
